@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlowMomi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌸 Bienvenida a GlowMomi</h1>
+    <p>Tu momento de brillo empieza ahora</p>
+
+    <form id="glowForm">
+      <label>¿Cómo te sientes hoy?</label>
+      <input type="text" name="estado" required />
+
+      <label>¿Cuánto tiempo tienes?</label>
+      <select name="tiempo">
+        <option value="5">5 minutos</option>
+        <option value="15">15 minutos</option>
+        <option value="30">30 minutos</option>
+      </select>
+
+      <label>¿Qué necesitas hoy?</label>
+      <select name="necesidad">
+        <option value="energía">Energía</option>
+        <option value="calma">Calma</option>
+        <option value="inspiración">Inspiración</option>
+        <option value="mimos">Mimos</option>
+      </select>
+
+      <button type="submit">Crear mi Glow Time</button>
+    </form>
+
+    <div id="respuestaGlow"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
